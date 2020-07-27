@@ -1,0 +1,55 @@
+.Arbre-1,
+.Arbre-2,
+.Arbre-3 {
+  position: relative;
+  margin: auto;
+  width: 420px;
+}
+.Arbre-1 img,
+.Arbre-2 img,
+.Arbre-3 img {
+  width: 100%;
+}
+.Arbre-1 .BC-values,
+.Arbre-2 .BC-values,
+.Arbre-3 .BC-values {
+  position: absolute;
+  color: #DBEEF1;
+  font-weight: bold;
+  padding: 76px 0 0 70px;
+  cursor: pointer;
+}
+.Arbre-1 .properties,
+.Arbre-2 .properties,
+.Arbre-3 .properties {
+  visibility: hidden;
+  position: absolute;
+  color: #DBEEF1;
+  width: 150px;
+  top: 17%;
+  right: 125%;
+  padding: 14px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.Arbre-1 #BC-001 {
+  top: 0.4%;
+  right: 42.7%;
+}
+.Arbre-1 #BC-001:hover #P-001 {
+  visibility: visible;
+}
+.Arbre-1 #BC-002 {
+  top: 0.4%;
+  right: 25.7%;
+}
+.Arbre-2 .BaseCalamite,
+.Arbre-3 .BaseCalamite {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .Arbre-1,
+  .Arbre-2,
+  .Arbre-3 {
+    width: 620px;
+  }
+}

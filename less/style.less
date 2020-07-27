@@ -1,0 +1,56 @@
+.Arbre {
+  &-1,&-2,&-3{
+    position: relative;
+    margin: auto;
+    width: 420px;
+    img{
+      width: 100%;
+    }
+    .BC-values{
+      position: absolute;
+      color: #DBEEF1;
+      font-weight: bold;
+      padding: 76px 0 0 70px;
+      cursor: pointer;
+    }
+    .properties{
+      visibility: hidden;
+      position: absolute;
+      color: #DBEEF1;
+      width: 150px;
+      top: 17%;
+      right: 125%;
+      padding: 14px;
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+
+  &-1{
+    #BC {
+      &-001{
+        top: 0.4%;
+        right: 42.7%;
+        &:hover #P-001{
+          visibility: visible;
+        }
+      }
+      &-002{
+        top: 0.4%;
+        right: 25.7%;
+      }
+    }
+  }
+
+  &-2, &-3{
+    .BaseCalamite {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 900px)  {
+  .Arbre {
+    &-1,&-2,&-3 {
+      width: 620px;
+    }
+  }
+}
