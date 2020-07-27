@@ -10,7 +10,7 @@
       position: absolute;
       color: #DBEEF1;
       font-weight: bold;
-      padding: 76px 0 0 70px;
+      padding: 50px 0 0 37px;
       cursor: pointer;
     }
     .properties{
@@ -18,10 +18,14 @@
       position: absolute;
       color: #DBEEF1;
       width: 150px;
-      top: 17%;
-      right: 125%;
       padding: 14px;
       background-color: rgba(255,255,255,0.3);
+    }
+  }
+
+  &-2, &-3{
+    .BaseCalamite {
+      display: none;
     }
   }
 
@@ -32,25 +36,39 @@
         right: 42.7%;
         &:hover #P-001{
           visibility: visible;
+          top: 17%;
+          right: 125%;
         }
       }
       &-002{
         top: 0.4%;
         right: 25.7%;
+        &:hover #P-002{
+          visibility: visible;
+          top: 17%;
+          right: 125%;
+        }
+      }
+      &-003{
+        top: 3.4%;
+        right: 40.9%;
+        &:hover #P-003{
+          visibility: visible;
+          top: 17%;
+          right: 125%;
+        }
       }
     }
   }
 
-  &-2, &-3{
-    .BaseCalamite {
-      display: none;
-    }
-  }
 }
 @media screen and (min-width: 900px)  {
   .Arbre {
     &-1,&-2,&-3 {
       width: 620px;
+      .BC-values{
+        padding: 76px 0 0 70px;
+      }
     }
   }
 }
