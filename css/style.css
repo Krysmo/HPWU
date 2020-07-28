@@ -11,7 +11,7 @@ body .Arbre-3 {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   margin: auto;
-  width: 420px;
+  width: 100%;
 }
 body .Arbre-1 img,
 body .Arbre-2 img,
@@ -24,8 +24,71 @@ body .Arbre-3 .BC-values {
   position: absolute;
   color: #DBEEF1;
   font-weight: bold;
-  padding: 50px 0 0 37px;
+  padding: 11% 0 0 10%;
   cursor: pointer;
+}
+body .Arbre-1 .BC-values#BC-001:hover #P-001,
+body .Arbre-2 .BC-values#BC-001:hover #P-001,
+body .Arbre-3 .BC-values#BC-001:hover #P-001 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-002:hover #P-002,
+body .Arbre-2 .BC-values#BC-002:hover #P-002,
+body .Arbre-3 .BC-values#BC-002:hover #P-002 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-003:hover #P-003,
+body .Arbre-2 .BC-values#BC-003:hover #P-003,
+body .Arbre-3 .BC-values#BC-003:hover #P-003 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-004:hover #P-004,
+body .Arbre-2 .BC-values#BC-004:hover #P-004,
+body .Arbre-3 .BC-values#BC-004:hover #P-004 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-005:hover #P-005,
+body .Arbre-2 .BC-values#BC-005:hover #P-005,
+body .Arbre-3 .BC-values#BC-005:hover #P-005 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-006:hover #P-006,
+body .Arbre-2 .BC-values#BC-006:hover #P-006,
+body .Arbre-3 .BC-values#BC-006:hover #P-006 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-007:hover #P-007,
+body .Arbre-2 .BC-values#BC-007:hover #P-007,
+body .Arbre-3 .BC-values#BC-007:hover #P-007 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-008:hover #P-008,
+body .Arbre-2 .BC-values#BC-008:hover #P-008,
+body .Arbre-3 .BC-values#BC-008:hover #P-008 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
+}
+body .Arbre-1 .BC-values#BC-009:hover #P-009,
+body .Arbre-2 .BC-values#BC-009:hover #P-009,
+body .Arbre-3 .BC-values#BC-009:hover #P-009 {
+  visibility: visible;
+  top: 17%;
+  right: 125%;
 }
 body .Arbre-1 .properties,
 body .Arbre-2 .properties,
@@ -67,38 +130,26 @@ body .Arbre-1 #BC-001 {
   top: 0.4%;
   right: 42.7%;
 }
-body .Arbre-1 #BC-001:hover #P-001 {
-  visibility: visible;
-  top: 17%;
-  right: 125%;
-}
 body .Arbre-1 #BC-002 {
   top: 0.4%;
   right: 25.7%;
-}
-body .Arbre-1 #BC-002:hover #P-002 {
-  visibility: visible;
-  top: 17%;
-  right: 125%;
 }
 body .Arbre-1 #BC-003 {
   top: 3.4%;
   right: 40.9%;
 }
-body .Arbre-1 #BC-003:hover #P-003 {
-  visibility: visible;
-  top: 17%;
-  right: 125%;
+body .Arbre-1 #BC-004 {
+  top: 3%;
+  right: 7.9%;
 }
-@media screen and (min-width: 900px) {
+body .Arbre-1 #BC-004 {
+  top: 3%;
+  right: 7.9%;
+}
+@media screen and (min-width: 620px) {
   body .Arbre-1,
   body .Arbre-2,
   body .Arbre-3 {
     width: 620px;
-  }
-  body .Arbre-1 .BC-values,
-  body .Arbre-2 .BC-values,
-  body .Arbre-3 .BC-values {
-    padding: 76px 0 0 70px;
   }
 }

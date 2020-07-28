@@ -1,42 +1,61 @@
-
-body{
+body {
   background-image: url("../img/fond.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   .Arbre {
-    &-1,&-2,&-3{
+    &-1, &-2, &-3 {
       font-family: Arial, Helvetica, sans-serif;
       position: relative;
       margin: auto;
-      width: 420px;
-      img{
+      width: 100%;
+
+      img {
         width: 100%;
       }
-      .BC-values{
+
+      .BC-values {
         position: absolute;
         color: #DBEEF1;
         font-weight: bold;
-        padding: 50px 0 0 37px;
+        padding: 11% 0 0 10%;
         cursor: pointer;
+
+        .loop(9);
+        .loop(@n, @i: 1) when (@i =< @n) {
+          &#BC-00@{i} {
+            &:hover #P-00@{i} {
+              visibility: visible;
+              top: 17%;
+              right: 125%;
+            }
+          }
+          .loop(@n, (@i + 1));
+        }
+
       }
-      .properties{
+
+      .properties {
         visibility: hidden;
         position: absolute;
         color: #5B5B5B;
         width: 150px;
         padding: 14px;
         background-color: rgba(255, 255, 255, 0.9);
-        .field-guide{
+
+        .field-guide {
           padding: 3px 40px 3px 28px;
           background-image: url("../img/field-guide.JPG");
         }
-        .ministry-manual{
+
+        .ministry-manual {
           padding: 3px 0 3px 28px;
           background-image: url("../img/ministry-manual.JPG");
         }
-        .field-guide, .ministry-manual{
+
+        .field-guide, .ministry-manual {
           background-size: contain;
           background-repeat: no-repeat;
           background-position: left;
@@ -44,54 +63,48 @@ body{
       }
     }
 
-    &-2, &-3{
+    &-2, &-3 {
       .BaseCalamite {
         display: none;
       }
     }
 
-    &-1{
+    &-1 {
       #BC {
-        &-001{
+        &-001 {
           top: 0.4%;
           right: 42.7%;
-          &:hover #P-001{
-            visibility: visible;
-            top: 17%;
-            right: 125%;
-          }
         }
-        &-002{
+
+        &-002 {
           top: 0.4%;
           right: 25.7%;
-          &:hover #P-002{
-            visibility: visible;
-            top: 17%;
-            right: 125%;
-          }
         }
-        &-003{
+
+        &-003 {
           top: 3.4%;
           right: 40.9%;
-          &:hover #P-003{
-            visibility: visible;
-            top: 17%;
-            right: 125%;
-          }
+        }
+
+        &-004 {
+          top: 3%;
+          right: 7.9%;
+        }
+
+        &-004 {
+          top: 3%;
+          right: 7.9%;
         }
       }
-    }
 
+    }
   }
 }
-@media screen and (min-width: 900px)  {
+@media screen and (min-width: 620px)  {
   body{
     .Arbre {
       &-1,&-2,&-3 {
         width: 620px;
-        .BC-values{
-          padding: 76px 0 0 70px;
-        }
       }
     }
   }
