@@ -1,44 +1,5 @@
-body {
-  background-image: url("../img/fond.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@import "pop-up";
+@import "pos-1";
+@import "reset";
+@import "global";
 
-  .Arbre {
-    &-1, &-2, &-3 {
-      font-family: Arial, Helvetica, sans-serif;
-      position: relative;
-      margin: auto;
-      width: 100%;
-
-      img {
-        width: 100%;
-      }
-
-      .BC-values {
-        position: absolute;
-        color: #DBEEF1;
-        font-weight: bold;
-        padding: 11% 0 0 10%;
-        cursor: pointer;
-      }
-    }
-
-    &-2, &-3 {
-      .BaseCalamite {
-        display: none;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 620px)  {
-  body{
-    .Arbre {
-      &-1,&-2,&-3 {
-        width: 620px;
-      }
-    }
-  }
-}
