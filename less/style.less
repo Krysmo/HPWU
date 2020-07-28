@@ -13,6 +13,19 @@
       font-weight: bold;
       padding: 50px 0 0 37px;
       cursor: pointer;
+
+      .loop(9);
+      .loop(@n, @i: 1) when (@i =< @n) {
+        &#BC-00@{i} {
+          &:hover #P-00@{i}{
+            visibility: visible;
+            top: 17%;
+            right: 125%;
+          }
+        }
+        .loop(@n, (@i + 1));
+      }
+
     }
     .properties{
       visibility: hidden;
@@ -48,29 +61,22 @@
       &-001{
         top: 0.4%;
         right: 42.7%;
-        &:hover #P-001{
-          visibility: visible;
-          top: 17%;
-          right: 125%;
-        }
       }
       &-002{
         top: 0.4%;
         right: 25.7%;
-        &:hover #P-002{
-          visibility: visible;
-          top: 17%;
-          right: 125%;
-        }
       }
       &-003{
         top: 3.4%;
         right: 40.9%;
-        &:hover #P-003{
-          visibility: visible;
-          top: 17%;
-          right: 125%;
-        }
+      }
+      &-004{
+        top: 3%;
+        right: 7.9%;
+      }
+      &-004{
+        top: 3%;
+        right: 7.9%;
       }
     }
   }
