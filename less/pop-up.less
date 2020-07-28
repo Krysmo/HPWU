@@ -1,0 +1,56 @@
+/*
+Gestion des pop-ups
+ */
+
+body{
+  .Arbre {
+    &-1, &-2, &-3 {
+      .properties {
+        visibility: hidden;
+        position: absolute;
+        color: #5B5B5B;
+        width: 150px;
+        padding: 14px;
+        background-color: rgba(255, 255, 255, 0.9);
+
+        .field-guide {
+          padding: 3px 40px 3px 28px;
+          background-image: url("../img/field-guide.JPG");
+        }
+
+        .ministry-manual {
+          padding: 3px 0 3px 28px;
+          background-image: url("../img/ministry-manual.JPG");
+        }
+
+        .field-guide, .ministry-manual {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: left;
+        }
+      }
+    }
+  }
+  // Fonction pour que chaque hover de BC fasse apparaitre sa propre pop-up
+  .Arbre {
+    .loop1(3);
+    .loop1(@n1, @i1: 1) when (@i1 =< @n1) {
+      &-@{i1}{
+        .BC-values{
+          .loop2(99);
+          .loop2(@n, @i: 1) when (@i =< @n) {
+            &#BC-@{i} {
+              &:hover #P-@{i} {
+                visibility: visible;
+                top: 17%;
+                right: 125%;
+              }
+            }
+            .loop2(@n, (@i + 1));
+          }
+        }
+      }
+      .loop1(@n1, (@i1 + 1));
+    }
+  }
+}
