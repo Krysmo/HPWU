@@ -5,8 +5,35 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
+  .total{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    bottom: 30px;
+
+    .content-total{
+      margin: auto;
+      width: 90%;
+      background-color: rgba(255,255,255,0.7);
+      display: flex;
+      div{
+        flex-grow: 4;
+        text-align: center;
+        display: flex;
+        span{
+          margin: auto 0 auto auto;
+        }
+        img{
+          height: 65px;
+          margin: auto auto auto 0;
+        }
+      }
+    }
+  }
+
   .Arbre {
     &-1, &-2, &-3 {
+      z-index: 2;
       font-family: Arial, Helvetica, sans-serif;
       position: relative;
       margin: auto;
@@ -35,6 +62,11 @@ body {
 
 @media screen and (min-width: 620px)  {
   body{
+    .total{
+      .content-total{
+        width: 560px;
+      }
+    }
     .Arbre {
       &-1,&-2,&-3 {
         width: 620px;

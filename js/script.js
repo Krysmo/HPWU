@@ -20,23 +20,54 @@ $( document ).ready(function() {
 
     var fieldGuideTotal = 0;
     var ministryManualTotal = 0;
+    var dadaBookTotal = 0;
+    var restrictedBookTotal = 0;
 
     $(".BC-values").single_double_click(function () {
         var val = parseInt($(this).find('.value').text());
         var max = parseInt($(this).find('.max').text());
         if(val < max) {
             $(this).find('.value').text(val + 1 );
-            fieldGuideTotal = fieldGuideTotal + parseInt($(this).find('.field-guide').text());
-            ministryManualTotal = ministryManualTotal + parseInt($(this).find('.ministry-manual').text());
+            if(!isNaN(parseInt($(this).find('.field-guide').text()))) {
+                fieldGuideTotal = fieldGuideTotal + parseInt($(this).find('.field-guide').text());
+            }
+            if(!isNaN(parseInt($(this).find('.ministry-manual').text()))) {
+                ministryManualTotal = ministryManualTotal + parseInt($(this).find('.ministry-manual').text());
+            }
+            if(!isNaN(parseInt($(this).find('.dada-book').text()))) {
+                dadaBookTotal = dadaBookTotal + parseInt($(this).find('.dada-book').text());
+            }
+            if(!isNaN(parseInt($(this).find('.restricted-book').text()))) {
+                restrictedBookTotal = restrictedBookTotal + parseInt($(this).find('.restricted-book').text());
+            }
+            majTotal();
         }
     }, function () {
         var val = parseInt($(this).find('.value').text());
         if(val > 0) {
             $(this).find('.value').text(val - 1 );
-            fieldGuideTotal = fieldGuideTotal - parseInt($(this).find('.field-guide').text());
-            ministryManualTotal = ministryManualTotal - parseInt($(this).find('.ministry-manual').text());
+            if(!isNaN(parseInt($(this).find('.field-guide').text()))) {
+                fieldGuideTotal = fieldGuideTotal - parseInt($(this).find('.field-guide').text());
+            }
+            if(!isNaN(parseInt($(this).find('.ministry-manual').text()))) {
+                ministryManualTotal = ministryManualTotal - parseInt($(this).find('.ministry-manual').text());
+            }
+            if(!isNaN(parseInt($(this).find('.dada-book').text()))) {
+                dadaBookTotal = dadaBookTotal - parseInt($(this).find('.dada-book').text());
+            }
+            if(!isNaN(parseInt($(this).find('.restricted-book').text()))) {
+                restrictedBookTotal = restrictedBookTotal - parseInt($(this).find('.restricted-book').text());
+            }
+            majTotal();
         }
     })
 
+
+    function majTotal(){
+        $('.field-guide-total span').text(fieldGuideTotal);
+        $('.ministry-manual-total span').text(ministryManualTotal);
+        $('.dada-book-total span').text(dadaBookTotal);
+        $('.restricted-book-total span').text(restrictedBookTotal);
+    }
 
 });
