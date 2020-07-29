@@ -28,17 +28,18 @@ $( document ).ready(function() {
         var max = parseInt($(this).find('.max').text());
         if(val < max) {
             $(this).find('.value').text(val + 1 );
-            if(!isNaN(parseInt($(this).find('.field-guide').text()))) {
-                fieldGuideTotal = fieldGuideTotal + parseInt($(this).find('.field-guide').text());
+            var niveau = '.level' + $(this).find('.value').text();
+            if(!isNaN(parseInt($(this).find(niveau).find('.field-guide').text()))) {
+                fieldGuideTotal += parseInt($(this).find(niveau).find('.field-guide').text());
             }
-            if(!isNaN(parseInt($(this).find('.ministry-manual').text()))) {
-                ministryManualTotal = ministryManualTotal + parseInt($(this).find('.ministry-manual').text());
+            if(!isNaN(parseInt($(this).find(niveau).find('.ministry-manual').text()))) {
+                ministryManualTotal += parseInt($(this).find(niveau).find('.ministry-manual').text());
             }
-            if(!isNaN(parseInt($(this).find('.dada-book').text()))) {
-                dadaBookTotal = dadaBookTotal + parseInt($(this).find('.dada-book').text());
+            if(!isNaN(parseInt($(this).find(niveau).find('.dada-book').text()))) {
+                dadaBookTotal += parseInt($(this).find(niveau).find('.dada-book').text());
             }
-            if(!isNaN(parseInt($(this).find('.restricted-book').text()))) {
-                restrictedBookTotal = restrictedBookTotal + parseInt($(this).find('.restricted-book').text());
+            if(!isNaN(parseInt($(this).find(niveau).find('.restricted-book').text()))) {
+                restrictedBookTotal += parseInt($(this).find(niveau).find('.restricted-book').text());
             }
             majTotal();
         }
@@ -46,17 +47,18 @@ $( document ).ready(function() {
         var val = parseInt($(this).find('.value').text());
         if(val > 0) {
             $(this).find('.value').text(val - 1 );
-            if(!isNaN(parseInt($(this).find('.field-guide').text()))) {
-                fieldGuideTotal = fieldGuideTotal - parseInt($(this).find('.field-guide').text());
+            var niveau = '.level' + val;
+            if(!isNaN(parseInt($(this).find(niveau).find('.field-guide').text()))) {
+                fieldGuideTotal = fieldGuideTotal - parseInt($(this).find(niveau).find('.field-guide').text());
             }
-            if(!isNaN(parseInt($(this).find('.ministry-manual').text()))) {
-                ministryManualTotal = ministryManualTotal - parseInt($(this).find('.ministry-manual').text());
+            if(!isNaN(parseInt($(this).find(niveau).find('.ministry-manual').text()))) {
+                ministryManualTotal = ministryManualTotal - parseInt($(this).find(niveau).find('.ministry-manual').text());
             }
-            if(!isNaN(parseInt($(this).find('.dada-book').text()))) {
-                dadaBookTotal = dadaBookTotal - parseInt($(this).find('.dada-book').text());
+            if(!isNaN(parseInt($(this).find(niveau).find('.dada-book').text()))) {
+                dadaBookTotal = dadaBookTotal - parseInt($(this).find(niveau).find('.dada-book').text());
             }
-            if(!isNaN(parseInt($(this).find('.restricted-book').text()))) {
-                restrictedBookTotal = restrictedBookTotal - parseInt($(this).find('.restricted-book').text());
+            if(!isNaN(parseInt($(this).find(niveau).find('.restricted-book').text()))) {
+                restrictedBookTotal = restrictedBookTotal - parseInt($(this).find(niveau).find('.restricted-book').text());
             }
             majTotal();
         }
