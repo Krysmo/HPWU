@@ -6,7 +6,7 @@ body{
   .Arbre {
     &-1, &-2, &-3 {
       .properties {
-        visibility: hidden;
+        display: none;
         position: absolute;
         color: #5B5B5B;
         width: 150px;
@@ -41,7 +41,7 @@ body{
           .loop2(@n, @i: 1) when (@i =< @n) {
             &#BC-@{i} {
               &:hover #P-@{i} {
-                visibility: visible;
+                display: block;
                 top: 17%;
                 right: 125%;
               }

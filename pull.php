@@ -1,2 +1,2 @@
 <?php
-exec("git pull https://github.com/Krysmo/HPWU.git master");
+exec("git pull origin master");
