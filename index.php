@@ -18,10 +18,10 @@
             <div class="fleche"><img src="./img/chevron.png" alt=""></div>
         </div>
         <div class="content-total-books">
-            <div class="field-guide-total"><span>0</span><img src="img/field-guide.png"></div><div class="ministry-manual-total"><span>0</span><img src="img/ministry-manual.png"></div><div class="dada-book-total"><span>0</span><img src="img/dada-book.png"></div><div class="restricted-book-total"><span>0</span><img src="img/restricted-book.png"></div>
+            <div class="field-guide-total"><span>0</span><img src="img/field-guide.png"></div><div class="ministry-manual-total"><span>0</span><img src="img/ministry-manual.png"></div><div class="restricted-book-total"><span>0</span><img src="img/restricted-book.png"></div><div class="dada-book-total"><span>0</span><img src="img/dada-book.png"></div>
         </div>
         <div class="content-total-spell">
-            <div class="S-1"><span class="value">0</span><span class="lib"> Maitrise des sorts</span></div>
+            <div class="S-1"><span class="value">0</span><span class="lib"> Spell Mastery</span></div>
         </div>
     </div>
 </div>
@@ -32,6 +32,12 @@
     $restricted_book = array(0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
     $dada_book = array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,20,20,20,0,0,20,0,20,0,20,20,20,20);
     $level = array(1,1,1,2,2,1,1,1,1,5,1,2,2,1,2,2,1,2,2,2,2,1,5,2,1,2,3,1,3,3,3,3,3,1,3,1,2,1,1,1,3,1,3,3,2,3,2,2,1,3,3,1,1,3,1,2,1,1,3,2,2,3,1,1,3,3,1,1,1,1,3,3,3,1,3,1,3,1,1,1,3,3,1,1,1,3,1,1,1,1);
+    $skill = array("Spell Mastery","Spell Mastery","Increase to Traces Revealed","Potion Potency Increase","Baruffio's Brain Elixir XP Increase","Spell Mastery","Potion Potency Increase","Charm Efficacy","Potion Duration Increase","Potion Potency Increase","Spell Mastery","Potion Brew Time Reduction","Potion Brew Time Reduction","Charm Capacity","Potion Brew Time Reduction","Potion Potency Increase","Increase to Trace Rarity","Spell Mastery","Potion Brew Time Reduction","Potion Brew Time Reduction","Potion Potency Increase","Spell Mastery","Potion Potency Increase","Potion Brew Time Reduction","Food Upgrade","Potion Brew Time Reduction","Potion Brew Time Reduction","Spell Mastery","Baruffio's Brain Elixir XP Increase","Potion Brew Time Reduction","Departure Denial","Potion Brew Time Reduction","Spell Mastery","Charm Efficacy","Spell Mastery","Food Upgrade","Departure Denial","Increased Inn Gift Chance","Spell Mastery","Charm Capacity","Spell Mastery","Potion Charge Increase","Spell Mastery","Spell Mastery","Departure Denial","Potion Potency Increase","Departure Denial","Departure Denial","Spell Mastery","Spell Mastery","Spell Mastery","Food Upgrade","Spell Mastery","Spell Mastery","Food Upgrade","Departure Denial","Charm Capacity","Food Upgrade","Potion Brew Time Reduction","Departure Denial","Departure Denial","Spell Mastery","Treasure Trunk XP Upgrade","Spell Mastery","Spell Mastery","Spell Mastery","Increased Inn Gift Chance","Increased Greenhouse Gift Chance","Increased Inn Gift Chance","Increased Greenhouse Gift Chance","Spell Mastery","Spell Mastery","Spell Mastery","Spell Mastery","Spell Mastery","Spellbook Reward Initialization","Spell Mastery","Spellbook Reward Initialization","Spellbook Reward Initialization","Spellbook Reward Initialization","Spell Mastery","Spell Mastery","Spellbook Reward Initialization","Potion Charge Increase","Spellbook Reward Initialization","Departure Denial","Spellbook Reward Initialization","Spellbook Reward Initialization","Spellbook Reward Initialization","Spellbook Reward Initialization");
+    $skillAmount = array("140","60","1","3% / 3%","5% / 5%","100","2","1","5","2% / 2% / 2% / 2% / 2%","100","1% / 2%","1% / 2%","1","1% / 2%","3% / 3%","1","30 / 30","1% / 2%","3% / 3%","3% / 4%","80","2% / 2% / 2% / 2% / 2%","2% / 2%","0","2% / 2%","3% / 3% / 3%","80","5% / 6% / 6%","2% / 2% / 2%","2% / 2% / 2%","1% / 1% / 2%","30 / 30 / 40","1","30 / 30 / 40","0","2% / 3%","0","80","1","30 / 30 / 40","0","30 / 30 / 40","30 / 30 / 40","2% / 3%","2% / 2% / 2%","2% / 3%","2% / 3%","80","30 / 30 / 40","30 / 30 / 40","0","80","30 / 30 / 40","0","2% / 3%","1","0","1% / 1% / 1%","2% / 3%","2% / 3%","30 / 30 / 40","100","60","40 / 40 / 40","40 / 40 / 40","0","0","0","0","40 / 40 / 40","40 / 40 / 40","20 / 20 / 30","100","40 / 40 / 40","0","40 / 40 / 40","0","0","0","40 / 40 / 40","40 / 40 / 40","0","1","0","2% / 3% / 3%","0","0","0","0");
+
+
+
+
     ?>
 <div class="Arbre-1">
     <img class="BaseCalamite" src="./img/Arbre1.png" alt="">
@@ -60,10 +66,16 @@
             <div class="value-max"><span class="value">0</span>/<span class="max">' . $level[$i] . '</span></div>
             <div class="properties" id="P-' . ($i+1) .'">';
 
+        if($level[$i] != 1){
+            $amout = array( explode( ' / ', $skillAmount[$i] ) );
+        } else {
+            $amout[0][0] = $skillAmount[$i];
+        }
         for ($lvl = 1; $lvl <= $level[$i]; $lvl++){
             echo '
                 <div class="level'. $lvl .'">
-                    <span class="field-guide">'. $field_guide[$i] .'</span><span class="ministry-manual">' . $ministery_manual[$i] . '</span><span class="restricted-book">' . $restricted_book[$i] . '</span><span class="dada-book">' . $dada_book[$i] . '</span>
+                    <div class="books"><span class="field-guide">'. $field_guide[$i] .'</span><span class="ministry-manual">' . $ministery_manual[$i] . '</span><span class="restricted-book">' . $restricted_book[$i] . '</span><span class="dada-book">' . $dada_book[$i] . '</span></div>
+                    <div class="skill"><span class="amount"> +'.$amout[0][$lvl-1]. '</span><span class="type"> '. $skill[$i] . '</span></div>
                 </div>';
         }
 

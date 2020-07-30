@@ -10,6 +10,14 @@ body .Arbre-3 .properties {
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
   padding: 30px;
+  z-index: 4;
+}
+body .Arbre-1 .properties .skill,
+body .Arbre-2 .properties .skill,
+body .Arbre-3 .properties .skill {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 14px;
 }
 body .Arbre-1 .properties .field-guide,
 body .Arbre-2 .properties .field-guide,
@@ -1741,6 +1749,7 @@ body .Arbre-3 img {
 body .Arbre-1 .BC-values,
 body .Arbre-2 .BC-values,
 body .Arbre-3 .BC-values {
+  z-index: 2;
   position: absolute;
   color: #DBEEF1;
   padding: 11% 0 0 10%;
