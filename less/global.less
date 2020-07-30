@@ -20,18 +20,36 @@ body {
       width: 90%;
       background-color: rgba(255,255,255,0.7);
       box-shadow: 0px 0px 10px 3px rgba(255,255,255,1);
-      display: flex;
-      div{
-        flex-grow: 4;
+      .content-total-fleche{
+        margin-bottom: -22px;
         text-align: center;
+        cursor: pointer;
+        width: 100%;
+        .fleche{
+          img{
+            height: 40px;
+            transform: rotate(180deg);
+            transition: 0.4s;
+          }
+        }
+      }
+      .content-total-books{
         display: flex;
-        span{
-          margin: auto 0 auto auto;
+        div{
+          flex-grow: 4;
+          text-align: center;
+          display: flex;
+          span{
+            margin: auto 0 auto auto;
+          }
+          img{
+            height: 65px;
+            margin: auto auto auto 0;
+          }
         }
-        img{
-          height: 65px;
-          margin: auto auto auto 0;
-        }
+      }
+      .content-total-spell{
+        display: none;
       }
     }
   }

@@ -72,4 +72,14 @@ $( document ).ready(function() {
         $('.restricted-book-total span').text(restrictedBookTotal);
     }
 
+    $('.content-total-fleche').click(function () {
+        if($('.content-total-spell').is(':hidden')){
+            $('.content-total-spell').show('slow');
+            $('.content-total-fleche .fleche img').css('transform','rotate(0deg)');
+        } else {
+            $('.content-total-spell').hide('slow');
+            $('.content-total-fleche .fleche img').css('transform','rotate(180deg)');
+        }
+    });
+
 });
